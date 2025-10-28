@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const adminSchema = new mongoose.Schema(
+const teamMemberSchema = new mongoose.Schema(
   {
     name: { type: String, required: true },
     userName: { type: String, required: true, unique: true },
@@ -14,5 +14,5 @@ const adminSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-const Admin = mongoose.model("Admin", adminSchema);
-export default Admin;
+const TeamMember = mongoose.model("TeamMember", teamMemberSchema);
+export default TeamMember;
