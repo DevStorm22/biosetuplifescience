@@ -9,6 +9,13 @@ import opportunity from "./routes/opportunity.js";
 import event from "./routes/event.js";
 import biopediascientistsketchphoto from "./routes/biopediascientistsketchphoto.js";
 import biopediascientistsketchmeme from "./routes/biopediascientistsketchmeme.js";
+import biopediascientistsketchvideo from "./routes/biopediascientistsketchvideo.js";
+import biopediaquiz from "./routes/biopediaquiz.js";
+import biopediajobspharma from "./routes/biopediajobspharma.js";
+import biopediajobsphd from "./routes/biopediajobsphd.js";
+import biopediajobsinternship from "./routes/biopediajobsinternship.js";
+import biopediajobsfellowship from "./routes/biopediajobsfellowship.js";
+import biopediajobsresearch from "./routes/biopediajobsresearch.js";
 
 dotenv.config({ path: "./configs/.env" });
 
@@ -31,6 +38,13 @@ app.use("/opportunity", opportunity);
 app.use("/event", event);
 app.use("/biopediascientistsketchphoto", biopediascientistsketchphoto);
 app.use("/biopediascientistsketchmeme", biopediascientistsketchmeme);
+app.use("/biopediascientistsketchvideo", biopediascientistsketchvideo);
+app.use("/biopediaquiz", biopediaquiz);
+app.use("/biopediajobspharma", biopediajobspharma);
+app.use("/biopediajobsphd", biopediajobsphd);
+app.use("/biopediajobsinternship", biopediajobsinternship);
+app.use("/biopediajobsfellowship", biopediajobsfellowship);
+app.use("/biopediajobsresearch", biopediajobsresearch);
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
