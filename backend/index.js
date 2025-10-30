@@ -1,5 +1,6 @@
 import dotenv from "dotenv";
 import express from "express";
+import cors from "cors";
 import connectDB from "./configs/db.js";
 import admin from "./routes/admin.js";
 import blog from "./routes/blog.js";
@@ -30,6 +31,7 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
+app.use(cors());
 app.use("/admin", admin);
 app.use("/blog", blog);
 app.use("/newsletter", newsletter);
