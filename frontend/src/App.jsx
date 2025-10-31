@@ -4,9 +4,8 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <Router>
-      <div>
+      <div className="font-poppins">
         <Navbar />
-        {/* Your routes will go here */}
       </div>
     </Router>
   );

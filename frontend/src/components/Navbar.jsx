@@ -3,16 +3,28 @@ import logo from "../assets/images/BIO.png";
 
 export default function Navbar() {
   return (
-    <div className="w-full h-20 flex justify-between items-center bg-[#00A6F5] text-white">
-      <div className="p-2">
+    <div className="w-full flex justify-between items-center bg-[#00A6F5] text-white p-1">
+      <div className="flex gap-3">
         <img src={logo} />
+        <div className="flex flex-col gap-1 items-start justify-center">
+          <h1 className="text-[30px] font-bold">BioSetup</h1>
+          <h2 className="text-[25px] font-semibold">Life Sciences</h2>
+        </div>
       </div>
-      <div className="flex justify-center items-center gap-20">
+      <div className="flex justify-center items-center gap-10 text-xl font-bold">
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
+        <Link to="/event">Event</Link>
+        <Link to="/team">Team</Link>
+        <Link to="/biopedia">BioPedia</Link>
+        <Link to="/opportunites">Opportunities</Link>
         <Link to="/contact">Contact</Link>
       </div>
-      <div className="p-2"></div>
+      <Link to="/admin">
+        <div className="p-3 text-[#00A6F5] bg-white rounded-3xl text-2xl mx-3">
+          Admin
+        </div>
+      </Link>
     </div>
   );
 }
