@@ -3,12 +3,12 @@ import logo from "../assets/images/BIO.png";
 
 export default function Navbar() {
   return (
-    <div className="w-full flex justify-between items-center bg-[#00A6F5] text-white p-1">
+    <div className="w-full flex justify-between items-center bg-[#00A6F5] text-white p-1.5 rounded-4xl mt-0.5">
       <div className="flex gap-3">
         <img src={logo} />
         <div className="flex flex-col gap-1 items-start justify-center">
-          <h1 className="text-[30px] font-bold">BioSetup</h1>
-          <h2 className="text-[25px] font-semibold">Life Sciences</h2>
+          <h1 className="text-[30px] font-bold">Biosetup</h1>
+          <h2 className="text-[25px] font-semibold">Lifesciences</h2>
         </div>
       </div>
       <div className="flex justify-center items-center gap-7 text-xl font-bold">
