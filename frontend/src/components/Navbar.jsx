@@ -11,17 +11,19 @@ export default function Navbar() {
           <h2 className="text-[25px] font-semibold">Life Sciences</h2>
         </div>
       </div>
-      <div className="flex justify-center items-center gap-10 text-xl font-bold">
+      <div className="flex justify-center items-center gap-7 text-xl font-bold">
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/event">Event</Link>
         <Link to="/team">Team</Link>
         <Link to="/biopedia">BioPedia</Link>
         <Link to="/opportunites">Opportunities</Link>
+        <Link to="/blog">Blog</Link>
+        <Link to="/newsletters">Newsletters</Link>
         <Link to="/contact">Contact</Link>
       </div>
       <Link to="/admin">
-        <div className="p-3 text-[#00A6F5] bg-white rounded-3xl text-2xl mx-3">
+        <div className="px-4 py-3 text-[#00A6F5] bg-white rounded-4xl font-bold text-center text-2xl mx-3">
           Admin
         </div>
       </Link>
