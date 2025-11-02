@@ -193,7 +193,10 @@ const Backanimation = () => {
   }, []);
 
   return (
-    <div id="container" className="relative w-full h-screen overflow-hidden">
+    <div
+      id="container"
+      className="relative w-full max-h-screen flex justify-center items-center overflow-hidden"
+    >
       <canvas
         id="demo-canvas"
         className="absolute top-0 left-0 w-screen z-10 overflow-hidden"

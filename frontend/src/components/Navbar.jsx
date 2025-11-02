@@ -7,11 +7,13 @@ export default function Navbar() {
       <div className="flex gap-3">
         <img src={logo} />
         <div className="flex flex-col gap-1 items-start justify-center">
-          <h1 className="text-[30px] font-bold">Biosetup</h1>
-          <h2 className="text-[25px] font-semibold">Lifesciences</h2>
+          <h1 className="text-[30px] font-bold">
+            Biosetup{" "}
+            <span className="text-[25px] font-semibold">Lifesciences</span>
+          </h1>
         </div>
       </div>
-      <div className="flex justify-center items-center gap-7 text-xl font-bold">
+      <div className="flex justify-center items-center gap-7 text-xl font-bold bg-white text-[#00A6F5] rounded-4xl p-4">
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/event">Event</Link>

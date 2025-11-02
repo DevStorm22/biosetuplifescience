@@ -1,14 +1,14 @@
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Backanimation from "./assets/Hero Animation/Backanimation";
+import Home from "./pages/Home"; // make sure Home is imported
 
 function App() {
   return (
     <Router>
-      <div>
-        <Navbar />
-        <Backanimation />
-      </div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </Router>
   );
 }
