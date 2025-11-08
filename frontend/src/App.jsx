@@ -12,6 +12,7 @@ import AdminBiopedia from "./pages/AdminBiopedia";
 import AdminOpportunities from "./pages/AdminOpportunities";
 import AdminBlog from "./pages/AdminBlog";
 import AdminNewsletter from "./pages/AdminNewsletter";
+import AdminEventCreate from "./pages/AdminEventCreate";
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
         <Route path="/admin/opportunities" element={<AdminOpportunities />} />
         <Route path="/admin/blog" element={<AdminBlog />} />
         <Route path="/admin/newsletters" element={<AdminNewsletter />} />
+        <Route path="/admin/event/create" element={<AdminEventCreate />} />
       </Routes>
       <Footer />
     </Router>

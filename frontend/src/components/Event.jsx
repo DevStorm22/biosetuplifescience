@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function Event() {
   return (
     <div className="flex flex-col justify-center items-center text-center p-5">
@@ -16,13 +17,13 @@ export default function Event() {
         <div className="w-0.5 h-70 bg-black"></div>
         <div className="flex flex-col gap-10 items-center justify-center">
           <div className="bg-gray-600 text-[#00A6F5] tracking-[5px] p-2 w-100 rounded-3xl">
-            Upcomming Webinars
+            <Link to="/event">Upcomming Webinars</Link>
           </div>
           <div className="bg-gray-600 text-[#00A6F5] tracking-[5px] p-2 w-100 rounded-3xl">
-            Upcomming Workshops
+            <Link to="/event">Upcomming Workshops</Link>
           </div>
           <div className="bg-gray-600 text-[#00A6F5] tracking-[5px] p-2 w-100 rounded-3xl">
-            Upcomming Trainings
+            <Link to="/event">Upcomming Trainings</Link>
           </div>
         </div>
       </div>

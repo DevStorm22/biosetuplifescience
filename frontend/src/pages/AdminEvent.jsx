@@ -1,4 +1,6 @@
+import { useNavigate } from "react-router-dom";
 export default function AdminEvent() {
+  const navigate = useNavigate();
   return (
     <div className="flex flex-col justify-center items-center gap-5 p-15">
       <h1 className="font-bold text-5xl text-[#00A6F5]">Admin Event Page</h1>
