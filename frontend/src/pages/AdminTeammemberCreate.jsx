@@ -6,6 +6,22 @@ export default function AdminTeamMemberCreate() {
         <div className="mb-4">
           <label
             className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="team-member-title"
+          >
+            Team Member Title
+          </label>
+          <input
+            className="form-input mt-1 w-full border-gray-300 rounded-md border p-2"
+            type="text"
+            id="team-member-title"
+            name="team-member-title"
+            placeholder="Enter team member title (Mr./Ms./Dr.)"
+            required
+          />
+        </div>
+        <div className="mb-4">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
             htmlFor="team-member-name"
           >
             Team Member Name
@@ -16,6 +32,22 @@ export default function AdminTeamMemberCreate() {
             id="team-member-name"
             name="team-member-name"
             placeholder="Enter team member name"
+            required
+          />
+        </div>
+        <div className="mb-4">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="team-member-username"
+          >
+            Team Member Username
+          </label>
+          <input
+            className="form-input mt-1 w-full border-gray-300 rounded-md border p-2"
+            type="text"
+            id="team-member-username"
+            name="team-member-username"
+            placeholder="Enter team member username"
             required
           />
         </div>
