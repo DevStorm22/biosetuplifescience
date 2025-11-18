@@ -64,6 +64,10 @@ import AdminBiopediaJobResearchUpdate from "./pages/AdminBiopediaJobResearchUpda
 import AdminBiopediaJobResearchView from "./pages/AdminBiopediaJobResearchView";
 import AdminBiopediaQuiz from "./pages/AdminBiopediaQuiz";
 import AdminBiopediaQuizCreate from "./pages/AdminBiopediaQuizCreate";
+import AdminOpportunitiesCreate from "./pages/AdminOpportunitiesCreate";
+import AdminOpportunitiesDelete from "./pages/AdminOpportunitiesDelete";
+import AdminOpportunitiesUpdate from "./pages/AdminOpportunitiesUpdate";
+import AdminOpportunitiesView from "./pages/AdminOpportunitiesView";
 
 export default function App() {
   return (
@@ -258,6 +262,22 @@ export default function App() {
         <Route
           path="/admin/biopedia/quiz/create"
           element={<AdminBiopediaQuizCreate />}
+        />
+        <Route
+          path="/admin/opportunities/create"
+          element={<AdminOpportunitiesCreate />}
+        />
+        <Route
+          path="/admin/opportunities/delete"
+          element={<AdminOpportunitiesDelete />}
+        />
+        <Route
+          path="/admin/opportunities/update"
+          element={<AdminOpportunitiesUpdate />}
+        />
+        <Route
+          path="/admin/opportunities/view"
+          element={<AdminOpportunitiesView />}
         />
       </Routes>
       <Footer />
