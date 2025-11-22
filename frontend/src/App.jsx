@@ -76,6 +76,7 @@ import AdminNewsletterCreate from "./pages/AdminNewsletterCreate";
 import AdminNewsletterDelete from "./pages/AdminNewsletterDelete";
 import AdminNewsletterUpdate from "./pages/AdminNewsletterUpdate";
 import AdminNewsletterView from "./pages/AdminNewsletterView";
+import TeamMembers from "./pages/Teammembers";
 
 export default function App() {
   return (
@@ -307,6 +308,7 @@ export default function App() {
           path="/admin/newsletters/view"
           element={<AdminNewsletterView />}
         />
+        <Route path="/team" element={<TeamMembers />} />
       </Routes>
       <Footer />
     </Router>
