@@ -68,6 +68,14 @@ import AdminOpportunitiesCreate from "./pages/AdminOpportunitiesCreate";
 import AdminOpportunitiesDelete from "./pages/AdminOpportunitiesDelete";
 import AdminOpportunitiesUpdate from "./pages/AdminOpportunitiesUpdate";
 import AdminOpportunitiesView from "./pages/AdminOpportunitiesView";
+import AdminBlogCreate from "./pages/AdminBlogCreate";
+import AdminBlogDelete from "./pages/AdminBlogDelete";
+import AdminBlogUpdate from "./pages/AdminBlogUpdate";
+import AdminBlogView from "./pages/AdminBlogView";
+import AdminNewsletterCreate from "./pages/AdminNewsletterCreate";
+import AdminNewsletterDelete from "./pages/AdminNewsletterDelete";
+import AdminNewsletterUpdate from "./pages/AdminNewsletterUpdate";
+import AdminNewsletterView from "./pages/AdminNewsletterView";
 
 export default function App() {
   return (
@@ -278,6 +286,26 @@ export default function App() {
         <Route
           path="/admin/opportunities/view"
           element={<AdminOpportunitiesView />}
+        />
+        <Route path="/admin/blog/create" element={<AdminBlogCreate />} />
+        <Route path="/admin/blog/delete" element={<AdminBlogDelete />} />
+        <Route path="/admin/blog/update" element={<AdminBlogUpdate />} />
+        <Route path="/admin/blog/view" element={<AdminBlogView />} />
+        <Route
+          path="/admin/newsletters/create"
+          element={<AdminNewsletterCreate />}
+        />
+        <Route
+          path="/admin/newsletters/delete"
+          element={<AdminNewsletterDelete />}
+        />
+        <Route
+          path="/admin/newsletters/update"
+          element={<AdminNewsletterUpdate />}
+        />
+        <Route
+          path="/admin/newsletters/view"
+          element={<AdminNewsletterView />}
         />
       </Routes>
       <Footer />

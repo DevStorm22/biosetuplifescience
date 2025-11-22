@@ -1,9 +1,7 @@
-export default function AdminOpportunitiesCreate() {
+export default function AdminNewsletterCreate() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
-      <h1 className="text-4xl font-bold mb-4">
-        Admin Opportunities Create Page
-      </h1>
+      <h1 className="text-4xl font-bold mb-4">Admin Newsletter Create Page</h1>
       <form className="bg-white p-8 rounded-xl shadow-xl flex flex-col gap-4 w-4xl">
         <div className="mb-4">
           <label htmlFor="title" className="block text-sm font-medium">
@@ -13,7 +11,7 @@ export default function AdminOpportunitiesCreate() {
             type="text"
             id="title"
             className="mt-1 block w-full border border-gray-300 rounded-md p-2"
-            placeholder="Enter opportunity title"
+            placeholder="Enter newsletter title"
           />
         </div>
         <div className="mb-4">
@@ -23,33 +21,22 @@ export default function AdminOpportunitiesCreate() {
           <textarea
             id="description"
             className="mt-1 block w-full border border-gray-300 rounded-md p-2"
-            placeholder="Enter opportunity description"
+            placeholder="Enter newsletter description"
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="company" className="block text-sm font-medium">
-            Company
+          <label htmlFor="author" className="block text-sm font-medium">
+            Author
           </label>
           <input
             type="text"
-            id="company"
+            id="author"
             className="mt-1 block w-full border border-gray-300 rounded-md p-2"
-            placeholder="Enter company name"
-          />
-        </div>
-        <div className="mb-4">
-          <label htmlFor="link" className="block text-sm font-medium">
-            Link
-          </label>
-          <input
-            type="text"
-            id="link"
-            className="mt-1 block w-full border border-gray-300 rounded-md p-2"
-            placeholder="Enter link to opportunity"
+            placeholder="Enter author name"
           />
         </div>
         <button className="w-full bg-blue-500 text-white py-2 rounded-md">
-          Create Opportunity
+          Create Newsletter
         </button>
       </form>
     </div>

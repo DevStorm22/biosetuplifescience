@@ -3,7 +3,7 @@ export default function AdminBiopediaScientistsketchVideoView() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       <h1 className="text-4xl font-bold mb-4">
-        Admin Biopedia Scientist Sketch Video View
+        Admin Biopedia Scientist Sketch Video View Page
       </h1>
       <div className="bg-white p-8 rounded-xl shadow-xl flex flex-col gap-4">
         <table className="min-w-full table-auto">
