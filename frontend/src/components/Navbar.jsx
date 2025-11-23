@@ -19,8 +19,8 @@ export default function Navbar() {
         <Link to="/event">Event</Link>
         <Link to="/team">Team</Link>
         <Link to="/biopedia">BioPedia</Link>
-        <Link to="/opportunites">Opportunities</Link>
-        <Link to="/blog">Blog</Link>
+        <Link to="/opportunities">Opportunities</Link>
+        <Link to="/blogs">Blogs</Link>
         <Link to="/newsletters">Newsletters</Link>
         <Link to="/contact">Contact</Link>
       </div>

@@ -78,6 +78,9 @@ import AdminNewsletterUpdate from "./pages/AdminNewsletterUpdate";
 import AdminNewsletterView from "./pages/AdminNewsletterView";
 import TeamMembers from "./pages/Teammembers";
 import Biopedia from "./pages/Biopedia";
+import Opportunities from "./pages/Opportunities";
+import Blogs from "./pages/Blogs";
+import Newsletters from "./pages/Newsletters";
 
 export default function App() {
   return (
@@ -311,6 +314,9 @@ export default function App() {
         />
         <Route path="/team" element={<TeamMembers />} />
         <Route path="/biopedia" element={<Biopedia />} />
+        <Route path="/opportunities" element={<Opportunities />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/newsletters" element={<Newsletters />} />
       </Routes>
       <Footer />
     </Router>

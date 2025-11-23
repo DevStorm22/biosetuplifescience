@@ -40,7 +40,6 @@ export default function TeamMembers() {
             onMouseEnter={() => setHoverIndex(index)}
             onMouseLeave={() => setHoverIndex(null)}
           >
-            {/* MEMBER PHOTO */}
             <div className="w-30 h-30 rounded-full overflow-hidden">
               <div
                 className="w-full h-full bg-cover bg-center"
@@ -51,9 +50,7 @@ export default function TeamMembers() {
             <h1 className="text-2xl text-[#00A6F5] font-bold">{member.name}</h1>
             <h2 className="text-xl font-semibold">{member.designation}</h2>
 
-            {/* SOCIAL LINKS */}
             <div className="flex flex-col gap-3 items-center justify-center">
-              {/* INSTAGRAM */}
               <div
                 className="flex flex-row justify-center items-center gap-3
                 bg-linear-to-r from-[#FEDA75] via-[#FA7E1E] to-[#D62976]
@@ -79,7 +76,6 @@ export default function TeamMembers() {
                 </div>
               </div>
 
-              {/* LINKEDIN */}
               <div
                 className="flex flex-row justify-center items-center gap-3
                 bg-linear-to-r from-[#0A66C2] via-[#0E4F94] to-[#004182]
@@ -105,7 +101,6 @@ export default function TeamMembers() {
                 </div>
               </div>
 
-              {/* EMAIL */}
               <div
                 className="flex flex-row justify-center items-center gap-3 cursor-pointer rounded-xl w-65 h-15 p-1
                 bg-linear-to-r from-[#FF4E50] via-[#D7263D] to-[#FF4E50]
