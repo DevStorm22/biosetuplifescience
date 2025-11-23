@@ -81,6 +81,7 @@ import Biopedia from "./pages/Biopedia";
 import Opportunities from "./pages/Opportunities";
 import Blogs from "./pages/Blogs";
 import Newsletters from "./pages/Newsletters";
+import AdminAuthentication from "./pages/AdminAuthentication";
 
 export default function App() {
   return (
@@ -317,6 +318,7 @@ export default function App() {
         <Route path="/opportunities" element={<Opportunities />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/newsletters" element={<Newsletters />} />
+        <Route path="/test" element={<AdminAuthentication />} />
       </Routes>
       <Footer />
     </Router>
