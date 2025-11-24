@@ -18,20 +18,20 @@ import biopediajobsinternship from "./routes/biopediajobsinternship.js";
 import biopediajobsfellowship from "./routes/biopediajobsfellowship.js";
 import biopediajobsresearch from "./routes/biopediajobsresearch.js";
 
-dotenv.config({ path: "./configs/.env" });
+dotenv.config();
 
 const app = express();
 const port = process.env.PORT;
 
 connectDB();
 
+app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.use(cors());
 app.use("/admin", admin);
 app.use("/blog", blog);
 app.use("/newsletter", newsletter);

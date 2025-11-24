@@ -1,6 +1,14 @@
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import axios from "axios";
 export default function AdminBiopedia() {
   const navigate = useNavigate();
+  useEffect(() => {
+    axios.get("/api/biopedia")
+      .then((res) => {
+        console.log(res.data);
+      });
+  }, []);
   return (
     <div className="flex flex-col justify-center items-center gap-5 p-15 min-h-screen">
       <h1 className="font-bold text-5xl text-[#00A6F5]">Admin Biopedia Page</h1>

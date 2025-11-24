@@ -6,17 +6,20 @@ import emailWhite from "../assets/images/envelope-regular-full.svg";
 import emailBlack from "../assets/images/envelope-regular-full (1).svg";
 import samplePhoto from "../assets/images/wallpaperDevStorm.png";
 import { useState } from "react";
+import { useEffect } from "react";
+import axios from "axios";
 
 export default function TeamMembers() {
-  const team = [
-    { name: "Kaushik Musale", designation: "Designation" },
-    { name: "Kaushik Musale", designation: "Designation" },
-    { name: "Kaushik Musale", designation: "Designation" },
-    { name: "Kaushik Musale", designation: "Designation" },
-    { name: "Kaushik Musale", designation: "Designation" },
-    { name: "Kaushik Musale", designation: "Designation" },
-  ];
-
+  const [team, setTeam] = useState([]);
+  useEffect(() => {
+    axios.get("/api/teammember")
+      .then((res) => {
+        setTeam(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
   // hover states per card
   const [hoverIndex, setHoverIndex] = useState(null);
   const [instagramHoverIndex, setInstagramHoverIndex] = useState(null);
