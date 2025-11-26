@@ -17,7 +17,11 @@ export const createBiopediajobsinternship = async (req, res) => {
     await newBiopediajobsinternship.save();
     res.status(200).json(newBiopediajobsinternship);
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    if (error.code === 11000) {
+      res.status(400).json({ message: "Duplicate entry detected." });
+    } else {
+      res.status(500).json({ message: error.message });
+    }
   }
 };
 
