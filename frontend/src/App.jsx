@@ -9,7 +9,6 @@ import Admin from "./pages/Admin";
 import AdminEvent from "./pages/AdminEvent";
 import AdminTeam from "./pages/AdminTeam";
 import AdminBiopedia from "./pages/AdminBiopedia";
-import AdminOpportunities from "./pages/AdminOpportunities";
 import AdminBlog from "./pages/AdminBlog";
 import AdminNewsletter from "./pages/AdminNewsletter";
 import AdminEventCreate from "./pages/AdminEventCreate";
@@ -64,6 +63,9 @@ import AdminBiopediaJobResearchUpdate from "./pages/AdminBiopediaJobResearchUpda
 import AdminBiopediaJobResearchView from "./pages/AdminBiopediaJobResearchView";
 import AdminBiopediaQuiz from "./pages/AdminBiopediaQuiz";
 import AdminBiopediaQuizCreate from "./pages/AdminBiopediaQuizCreate";
+import AdminBiopediaQuizDelete from "./pages/AdminBiopediaQuizDelete";
+import AdminBiopediaQuizView from "./pages/AdminBiopediaQuizView";
+import AdminOpportunities from "./pages/AdminOpportunities";
 import AdminOpportunitiesCreate from "./pages/AdminOpportunitiesCreate";
 import AdminOpportunitiesDelete from "./pages/AdminOpportunitiesDelete";
 import AdminOpportunitiesUpdate from "./pages/AdminOpportunitiesUpdate";
@@ -82,6 +84,7 @@ import Opportunities from "./pages/Opportunities";
 import Blogs from "./pages/Blogs";
 import Newsletters from "./pages/Newsletters";
 import AdminAuthentication from "./pages/AdminAuthentication";
+import AdminBiopediaQuizUpdate from "./pages/AdminBiopediaQuizUpdate";
 
 export default function App() {
   return (
@@ -277,6 +280,9 @@ export default function App() {
           path="/admin/biopedia/quiz/create"
           element={<AdminBiopediaQuizCreate />}
         />
+        <Route path="/admin/biopedia/quiz/delete" element={<AdminBiopediaQuizDelete />} />
+        <Route path="/admin/biopedia/quiz/update" element={<AdminBiopediaQuizUpdate />} />
+        <Route path="/admin/biopedia/quiz/view" element={<AdminBiopediaQuizView />} />
         <Route
           path="/admin/opportunities/create"
           element={<AdminOpportunitiesCreate />}
@@ -315,8 +321,8 @@ export default function App() {
         />
         <Route path="/team" element={<TeamMembers />} />
         <Route path="/biopedia" element={<Biopedia />} />
-        <Route path="/opportunities" element={<Opportunities />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/opportunities" element={<Opportunities />} />
         <Route path="/newsletters" element={<Newsletters />} />
         <Route path="/test" element={<AdminAuthentication />} />
       </Routes>

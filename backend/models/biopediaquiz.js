@@ -1,19 +1,33 @@
 import mongoose from "mongoose";
 
+const questionSchema = new mongoose.Schema({
+  question: { type: String, required: true },
+  options: {
+    type: [String],
+    validate: {
+      validator: function (val) {
+        return val.length === 4;
+      },
+      message: "Each question must have exactly 4 options",
+    },
+  },
+});
+
 const biopediaquizSchema = new mongoose.Schema(
   {
     title: { type: String, required: true, unique: true },
     description: { type: String, required: true },
-    question1: { type: String, required: true },
-    question2: { type: String, required: true },
-    question3: { type: String, required: true },
-    question4: { type: String, required: true },
-    question5: { type: String, required: true },
+    questions: {
+      type: [questionSchema],
+      validate: {
+        validator: function (val) {
+          return val.length === 5; // EXACTLY 5 questions
+        },
+        message: "Quiz must have exactly 5 questions",
+      },
+    },
   },
-  {
-    timestamps: true,
-  }
+  { timestamps: true }
 );
 
-const Biopediaquiz = mongoose.model("Biopediaquiz", biopediaquizSchema);
-export default Biopediaquiz;
+export default mongoose.model("Biopediaquiz", biopediaquizSchema);

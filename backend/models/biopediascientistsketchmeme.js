@@ -12,4 +12,5 @@ const Biopediascientistsketchmeme = mongoose.model(
   "Biopediascientistsketchmeme",
   biopediascientistsketchmemeSchema
 );
+
 export default Biopediascientistsketchmeme;

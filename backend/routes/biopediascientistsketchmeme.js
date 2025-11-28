@@ -4,16 +4,14 @@ import {
   createBiopediascientistsketchmeme,
   updateBiopediascientistsketchmeme,
   deleteBiopediascientistsketchmeme,
+  uploadMeme,
 } from "../controllers/biopediascientistsketchmeme.js";
 
 const router = express.Router();
 
 router.get("/", getBiopediascientistsketchmeme);
-
-router.post("/create", createBiopediascientistsketchmeme);
-
-router.put("/update/:title", updateBiopediascientistsketchmeme);
-
-router.delete("/delete/:title", deleteBiopediascientistsketchmeme);
+router.post("/create", uploadMeme, createBiopediascientistsketchmeme);
+router.patch("/update/:id", updateBiopediascientistsketchmeme);
+router.delete("/delete/:id", deleteBiopediascientistsketchmeme);
 
 export default router;

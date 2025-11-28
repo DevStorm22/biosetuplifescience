@@ -9,11 +9,8 @@ import {
 const router = express.Router();
 
 router.get("/", getBiopediaquiz);
-
 router.post("/create", createBiopediaquiz);
-
-router.put("/update/:title", updateBiopediaquiz);
-
-router.delete("/delete/:title", deleteBiopediaquiz);
+router.patch("/update/:id", updateBiopediaquiz);
+router.delete("/delete/:id", deleteBiopediaquiz);
 
 export default router;
