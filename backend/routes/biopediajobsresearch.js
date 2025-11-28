@@ -12,8 +12,8 @@ router.get("/", getBiopediajobsresearch);
 
 router.post("/create", createBiopediajobsresearch);
 
-router.put("/update/:title", updateBiopediajobsresearch);
+router.patch("/update/:id", updateBiopediajobsresearch);
 
-router.delete("/delete/:title", deleteBiopediajobsresearch);
+router.delete("/delete/:id", deleteBiopediajobsresearch);
 
 export default router;

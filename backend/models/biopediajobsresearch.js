@@ -1,16 +1,14 @@
 import mongoose from "mongoose";
 
-const BiopediajobsresearchSchema = mongoose.Schema(
-  {
-    title: { type: String, required: true, unique: true },
-    description: { type: String, required: true },
-    link: { type: String, required: true },
-  },
-  { timestamps: true }
-);
+const biopediajobsresearchSchema = new mongoose.Schema({
+  title: { type: String, required: true, unique: true },
+  description: { type: String, required: true },
+  link: { type: String, required: true },
+});
 
 const Biopediajobsresearch = mongoose.model(
   "Biopediajobsresearch",
-  BiopediajobsresearchSchema
+  biopediajobsresearchSchema
 );
+
 export default Biopediajobsresearch;
